@@ -1,0 +1,8 @@
+node_modules
+umd
+esm
+commonjs
+
+tests
+.vscode
+build

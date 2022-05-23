@@ -1,0 +1,49 @@
+{
+  "name": "ffc-json-diff",
+  "version": "1.0.0",
+  "description": "https://github.com/feature-flags-co/ffc-json-diff",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "rimraf build && tsc --watch",
+    "build": "rimraf build && tsc",
+    "prepublishOnly": "npm run build",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feature-flags-co/ffc-json-diff.git"
+  },
+  "keywords": [
+    "featureflag.co",
+    "敏捷开关",
+    "feature flags",
+    "json compare",
+    "json diff"
+  ],
+  "author": "北京心跳率科技有限公司",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feature-flags-co/ffc-json-diff/issues"
+  },
+  "homepage": "https://github.com/feature-flags-co/ffc-json-diff/blob/main/README.md",
+  "files": [
+    "/build",
+    "/umd"
+  ],
+  "devDependencies": {
+    "gts": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.6",
+    "tslint": "^6.1.3",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "lodash.difference": "^4.5.0",
+    "lodash.intersection": "^4.4.0",
+    "lodash.keyby": "^4.6.0"
+  }
+}

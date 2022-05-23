@@ -1,0 +1,21 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "noImplicitAny": false,
+    "module": "esnext",
+    "lib": [ "es2019", "dom" ],
+    "target": "es5",
+    "allowJs": true,
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+, "src/changesets1.js"  ],
+  "exclude": [
+    "src/umd.ts"
+  ]
+}

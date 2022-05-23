@@ -1,0 +1,14 @@
+
+1. publish
+    2.1 npm login
+    2.2 npm publish --access public
+
+for error: 'this' implicitly has type 'any' because it does not have a type annotation
+ref: https://www.valentinog.com/blog/this/
+const button = document.querySelector("button");
+button?.addEventListener("click", handleClick);
+
+function handleClick(this: HTMLElement) {
+    console.log("Clicked!");
+    this.removeEventListener("click", handleClick);
+}
